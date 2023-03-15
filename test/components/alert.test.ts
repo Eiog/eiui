@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest'
 import { mount } from '@vue/test-utils'
-import { OAlert } from '@eiog-ui/components'
+import { OAlert } from '@eiui/components'
 
 const ALERT_DESCRIPTION = 'Test content'
 const ALERT_TITLE = 'Test title'

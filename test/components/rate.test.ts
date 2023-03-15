@@ -1,7 +1,7 @@
 import { describe, expect, test, vi } from 'vitest'
 import { nextTick, ref } from 'vue'
 import { mount } from '@vue/test-utils'
-import { ORate } from '@eiog-ui/components'
+import { ORate } from '@eiui/components'
 
 describe('Rate Component', () => {
   test('basic', async () => {

@@ -24,7 +24,7 @@ async function generateComponentsType() {
   const components = {}
   Object.keys(globalComponents).forEach((key) => {
     // Replace after packaging
-    const entry = `typeof import('eiog-ui')['${key}']`
+    const entry = `typeof import('eiui')['${key}']`
     if (key.startsWith('E'))
       components[key] = entry
   })

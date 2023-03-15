@@ -1,46 +1,44 @@
 {
-  "name": "eiog-ui",
+  "name": "eiui",
   "type": "module",
   "version": "0.0.1-beta.1",
+  "packageManager": "pnpm@7.18.0",
   "description": "",
-  "author": "",
+  "author": "Eiog",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/Eiog/eiui",
   "repository": {
     "type": "git",
-    "url": "",
-    "directory": "packages/eiog-ui"
+    "url": "git@github.com:Eiog/eiui.git",
+    "directory": "packages/eiui"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/Eiog/eiui/issues"
   },
   "keywords": [
-    "eiog-ui",
-    "unocss",
-    "vueuse"
+    "eiui"
   ],
   "sideEffects": false,
   "exports": {
     ".": {
-      "types": "./dist/types/eiog-ui/src/index.d.ts",
-      "require": "./dist/eiog-ui.umd.cjs",
-      "import": "./dist/eiog-ui.js"
+      "types": "./dist/types/eiui/src/index.d.ts",
+      "require": "./dist/eiui.umd.cjs",
+      "import": "./dist/eiui.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
-  "main": "./dist/eiog-ui.umd.cjs",
-  "module": "./dist/eiog-ui.js",
-  "types": "./dist/types/eiog-ui/src/index.d.ts",
+  "main": "./dist/eiui.umd.cjs",
+  "module": "./dist/eiui.js",
+  "types": "./dist/types/eiui/src/index.d.ts",
   "files": [
-    "dist",
-    "volar.d.ts"
+    "package.json"
   ],
   "scripts": {
     "build": "vue-tsc --declaration --emitDeclarationOnly --skipLibCheck && vite build",
     "dev": "vue-tsc --declaration --emitDeclarationOnly --skipLibCheck && vite build --watch"
   },
   "dependencies": {
-    "@eiog-ui/components": "workspace:*"
+    "@eiui/components": "workspace:*"
   },
   "publishConfig": {
     "access": "public"
